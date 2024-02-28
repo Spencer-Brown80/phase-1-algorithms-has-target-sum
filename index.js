@@ -1,5 +1,17 @@
+
+
+
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (let i = 0; i <= array.length - 1; i++) {
+    for (let j = i + 1; j <= array.length; j++) {
+       if (array[i] + array[j] === target) {
+        return true;
+       }
+    }
+  }    
+
+      return false
+      
 }
 
 /* 
@@ -8,7 +20,28 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
-*/
+*/ 
+// (1,2,3,4,5)
+// 1 = 1:2, 1:3, 1:4, 1:5
+// 2 = 2:3, 2:4, 2:5
+// 3 = 3:4, 3:5
+// 4 = 4:5
+
+// i = 0, i < array.length, i++
+// j = i + 1, j < array.length, j++
+
+// Return sums into another array
+// compare sums to target 
+
+
+// create variables to make function work
+    //first number to add
+    //second number to add
+    //target number
+
+// create function to iterate over array and select numbers a and b regardless of array size
+// function cannot add two of the same number
+// return an if then at end of the function
 
 /*
   Add written explanation of your solution here
